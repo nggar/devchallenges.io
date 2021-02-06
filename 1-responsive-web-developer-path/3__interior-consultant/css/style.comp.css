@@ -1,0 +1,215 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: unset; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #181719;
+  color: #fff; }
+
+.container {
+  max-width: 144rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 90%; }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      width: 95%; } }
+
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181719;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    right: -100%; }
+    .nav__button-close {
+      top: 2rem;
+      right: 0; } }
+
+.nav__list {
+  display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__list {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100%;
+      align-items: center; } }
+
+.nav__item {
+  list-style: none; }
+  .nav__item:not(:last-child) {
+    margin-right: 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__item:not(:last-child) {
+        margin: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav__item {
+      padding: 2rem; } }
+
+.nav__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__link {
+      font-size: 2rem; } }
+  .nav__link--active {
+    font-weight: 700; }
+
+.show {
+  right: 0; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-color: #181719;
+      position: fixed;
+      z-index: 5;
+      margin: 0;
+      top: 0;
+      width: 95%;
+      padding: 2rem 0; } }
+  .header .material-icons {
+    display: none;
+    font-size: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header .material-icons {
+        display: initial;
+        position: absolute;
+        cursor: pointer; } }
+  .header__menu {
+    right: 0; }
+  .header__logo {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    padding: .5rem;
+    border: 1px solid #fff; }
+
+.main {
+  display: flex;
+  margin: 12rem 0 0 0; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      flex-direction: column; } }
+
+.text__box {
+  width: 40%;
+  padding-right: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .text__box {
+      width: 100%;
+      padding-right: 0; } }
+
+.text__heading {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+  margin-bottom: 4rem; }
+
+.text__body {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .text__body {
+      width: 70%; } }
+
+.text__btn {
+  font-size: 1.6rem;
+  font-weight: 600; }
+
+.img-box {
+  width: 60%; }
+  @media only screen and (max-width: 37.5em) {
+    .img-box {
+      width: 100%;
+      margin-top: 4rem; } }
+
+.main-img {
+  width: 100%; }
+
+.profile {
+  position: relative;
+  width: 40rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-top: -8rem;
+  background-color: #181719;
+  padding: 1.5rem 3rem;
+  z-index: 2;
+  margin-right: 4rem;
+  margin-bottom: 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      margin-right: 2rem;
+      width: 35rem;
+      height: 10rem;
+      padding: 1.5rem 2rem; } }
+  .profile__wrapper {
+    display: flex;
+    margin-bottom: 1.5rem; }
+  .profile__img-box {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem; }
+  .profile__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .profile__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .profile__name {
+    font-weight: 500;
+    font-size: 1.4rem; }
+  .profile__job {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #828282; }
+  .profile__info {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-right: 10rem; }
+    @media only screen and (max-width: 37.5em) {
+      .profile__info {
+        font-size: 2rem;
+        padding-right: 5rem; } }
+
+.footer__text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #a9a9a9; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__text {
+      font-size: 1.4rem; } }

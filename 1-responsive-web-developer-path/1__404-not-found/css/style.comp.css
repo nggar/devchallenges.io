@@ -1,0 +1,101 @@
+/* Base */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
+
+body {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  font-weight: 700;
+  line-height: 1.4; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      line-height: 1.2; } }
+  body ::selection {
+    background-color: #333;
+    color: #fff; }
+
+/* Container */
+.container {
+  background-color: #fff;
+  margin: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      margin: 0 3rem; } }
+
+/* Logo */
+.logo__name {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 2rem 0; }
+
+/* Main */
+.main {
+  display: flex;
+  /* Section 1 */
+  /* Section 2 */ }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      flex-direction: column; } }
+  .main__section-1 {
+    flex: 1; }
+    @media only screen and (max-width: 37.5em) {
+      .main__section-1 {
+        text-align: center; } }
+  .main__img {
+    width: 45rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main__img {
+        width: 30rem; } }
+  .main__section-2 {
+    flex: 1; }
+  .main__heading {
+    font-size: 6rem; }
+  .main__paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #4f4f4f;
+    padding-right: 15rem;
+    margin: 2rem 0 3rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .main__paragraph {
+        padding-right: 0;
+        margin: 4rem 0 6rem; } }
+
+/* button */
+.btn {
+  padding: 1.5rem 3rem;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: inherit;
+  border: 1px solid;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+/* footer */
+.footer {
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #a9a9a9; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      font-size: 1.4rem;
+      margin-top: 8rem; } }
