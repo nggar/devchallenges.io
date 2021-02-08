@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./base";
+@import "./header";
+@import "./gallery";
+
+.footer {
+      &__text {
+            font-size: 1.6rem;
+            color: $color-grey-2;
+            font-weight: 600;
+            text-align: center;
+      }
+}
