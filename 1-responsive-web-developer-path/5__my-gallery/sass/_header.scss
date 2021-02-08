@@ -17,6 +17,10 @@
             grid-column: center-start / center-end;
             width: 15rem;
             height: 15rem;
+            @include responsive (phone) {
+                  width: 12rem;
+                  height: 12rem;
+            }
       }
       &__photo {
             border-radius: 1.5rem;

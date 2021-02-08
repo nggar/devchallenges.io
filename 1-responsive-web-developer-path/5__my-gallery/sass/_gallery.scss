@@ -6,6 +6,10 @@
 
       grid-gap: 2rem;
       margin-bottom: 10rem;
+      
+      @include responsive (phone) {
+            grid-gap: 1rem;
+      }
 
       &__item {
             overflow: hidden;
@@ -13,9 +17,17 @@
             width: 100%;
             box-shadow: 0px 4px 6px rgba($black,.15);
             background-color: $color-grey-4;
+
+            @include responsive (phone) {
+                  box-shadow: 0px .2rem .4rem rgba($black,.15);
+            }
               
             &:hover > :only-child {
                   transform: scale(1.1);
+
+                  @include responsive (phone) {
+                        transform: scale(1.05);
+                  }
             }
 
             &--1 {
