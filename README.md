@@ -17,3 +17,5 @@ Basics responsive **HTML/CSS/JS** websites and pages
 - Challenge 3 : [**"Interior Consultant"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/3__interior-consultant)
 
 - Challenge 4 : [**"Recipe Page"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/4__recipe-page)
+
+- Challenge 5 : [**"My Gallery"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/5__my-gallery)

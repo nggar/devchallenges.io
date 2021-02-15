@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Checkout Page</title>
+      <!-- Material icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+      <link rel="shortcut icon" href="./images/devchallenges.png" type="image/x-icon">
+      <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+      <div class="wrapper">
+            <h1 class="page-title">Checkout</h1>
+
+            <main class="main">
+                  <!-- Order Preview -->
+                  <div class="order-preview">
+                        <div class="order-item grid g-col-2 g-row-2">
+                              <div class="item-image r-span-2">
+                                    <img src="./images/photo1.png" alt="Order photo" width="140px">
+                              </div>
+                              <div class="item-infos">
+                                    <p class="item-name">Vintage Backbag</p>
+                                    <span class="item-price js-item-price" data-price="54.99">$54.99</span>
+                                    <s class="item-old-price js-item-old-price" data-price="94.99">$94.99</s>
+                              </div>
+                              <div class="item-quantity-box flex ai-c as-fe jc-sb">
+                                    <span class="material-icons icon icon-btn js-quantity-btn"
+                                          data-type="-">remove</span>
+                                    <span class="item-quantity js-quantity-output" data-quantity="1">1</span>
+                                    <span class="material-icons icon icon-btn js-quantity-btn" data-type="+">add</span>
+                              </div>
+                        </div>
+                        <div class="order-item grid g-col-2 g-row-2">
+                              <div class="item-image r-span-2">
+                                    <img src="./images/photo2.png" alt=" Order photo" width="140px">
+                              </div>
+                              <div class="item-infos">
+                                    <p class="item-name">Levi Shoes</p>
+                                    <span class="item-price js-item-price" data-price="74.99">$74.99</span>
+                                    <s class="item-old-price js-item-old-price" data-price="124.99">$124.99</s>
+                              </div>
+                              <div class="item-quantity-box flex ai-c as-fe jc-sb">
+                                    <span class="material-icons icon icon-btn js-quantity-btn"
+                                          data-type="-">remove</span>
+                                    <span class="item-quantity js-quantity-output" data-quantity="1">1</span>
+                                    <span class="material-icons icon icon-btn js-quantity-btn" data-type="+">add</span>
+                              </div>
+                        </div>
+                        <div class="order-infos">
+                              <div class="order-info flex ai-c jc-sb">
+                                    <p class="order-info-name">Shipping</p>
+                                    <p class="order-info-value js-shipping-price" data-price="19">$19</p>
+                              </div>
+                              <div class="order-info flex ai-c jc-sb">
+                                    <p class="order-info-name">Total</p>
+                                    <p class="order-info-value js-total-output">$148.98</p>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- Form -->
+                  <form action="submit" class="form js-form">
+
+                        <!-- Form section 1 -->
+                        <div class="form-section">
+                              <h2 class="form-section-title">Contact information</h2>
+                              <div class="input-container js-input-ctn">
+                                    <label for="email" class="label">E-mail</label>
+                                    <div class="input-box">
+                                          <input type="email" name="email" id="email" class="input js-verify-input"
+                                                placeholder="Enter your email...">
+                                          <span class="material-icons icon">email</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+                              <div class="input-container js-input-ctn">
+                                    <label for="tel" class="label">Phone</label>
+                                    <div class="input-box">
+                                          <input type="tel" name="tel" id="tel" class="input js-verify-input"
+                                                placeholder="Enter your phone..." maxlength="12">
+                                          <span class="material-icons icon">phone</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <!-- Form section 2 -->
+                        <div class="form-section grid g-col-2">
+                              <h2 class="form-section-title c-span-2">Shipping address</h2>
+                              <div class="input-container js-input-ctn c-span-2">
+                                    <label for="name" class="label">Full name</label>
+                                    <div class="input-box">
+                                          <input type="text" name="name" id="name" class="input js-verify-input"
+                                                placeholder="Your full name...">
+                                          <span class="material-icons icon">account_circle</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+                              <div class="input-container js-input-ctn c-span-2">
+                                    <label for="address" class="label">Address</label>
+                                    <div class="input-box">
+                                          <input type="text" name="adress" id="address" class="input js-verify-input"
+                                                placeholder="Your address...">
+                                          <span class="material-icons icon">home</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+                              <div class="input-container js-input-ctn c-span-2">
+                                    <label for="city" class="label">City</label>
+                                    <div class="input-box">
+                                          <input type="text" name="city" id="city" class="input js-verify-input"
+                                                placeholder="Your city...">
+                                          <span class="material-icons icon">location_city</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+                              <div class="input-container js-input-ctn">
+                                    <label for="country" class="label">Country</label>
+                                    <div class="input-box select-country">
+                                          <select name="country" id="country" class="input js-verify-input">
+                                                <option value="" selected disabled hidden>Your country...</option>
+                                                <option value="Indonesia">Indonesia</option>
+                                                <option value="Malaysia">Malaysia</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Thailand">Thailand</option>
+                                                <option value="Vietnam">Vietnam</option>
+                                          </select>
+                                          <span class="material-icons icon">public</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                          <span class="material-icons icon icon-btn icon-select"></span>
+                                    </div>
+                              </div>
+                              <div class="input-container js-input-ctn">
+                                    <label for="postal-code" class="label">Postal code</label>
+                                    <div class="input-box">
+                                          <input type="text" name="postal-code" id="postal-code"
+                                                class="input js-verify-input" placeholder="Your postal code...">
+                                          <span class="material-icons icon">markunread_mailbox</span>
+                                          <span class="material-icons icon icon-validation"></span>
+                                    </div>
+                              </div>
+
+                              <!-- checkbox -->
+                              <div class="input-container js-input-ctn c-span-2">
+                                    <label for="save" class="label input-box checkbox">Save this information for next
+                                          time
+                                          <input type="checkbox" name="save" id="save" class="input">
+                                          <span class="material-icons icon custom-checkbox"></span>
+                                    </label>
+                              </div>
+                        </div>
+                        <button class="button">Continue</button>
+                  </form>
+            </main>
+      </div>
+      <footer class="footer">
+            <p class="dev-challenges-profile">Enggar @
+                  DevChallenges.io</p>
+      </footer>
+      <script src="./js/script.js"></script>
+</body>
+
+</html>
