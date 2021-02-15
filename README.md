@@ -18,8 +18,5 @@ Basics responsive **HTML/CSS/JS** websites and pages
 
 - Challenge 4 : [**"Recipe Page"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/4__recipe-page)
 
-<<<<<<< HEAD
-- Challenge 5 : [**"My Gallery"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/5__my-gallery)
-=======
 - Challenge 5 : [**"My Gallery"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/5__my-gallery)
 >>>>>>> c0ad6f2ed6453ab0cab3b7df877cbe16426d8112
