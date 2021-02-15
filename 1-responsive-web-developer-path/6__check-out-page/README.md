@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://awesome-liskov-f7358d.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://devchallenges.io/solutions/BCYByz8JOn04NW2ZhfbF">
       Solution
     </a>
     <span> | </span>
@@ -35,13 +35,15 @@
 
 ![screenshot](2.png)
 
+- 6th challange for resposive web developer path
+
 
 ### Built With
 
-- [HTML](https://www.w3schools.com/html/)
-- [CSS](https://www.w3schools.com/css/)
-- [Sass](https://sass-lang.com/)
-- [Javascript](https://www.w3schools.com/js/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [SASS](https://sass-lang.com/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Features
 
@@ -49,3 +51,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
+- GitHub : [@nggar](https://github.com/nggar)
