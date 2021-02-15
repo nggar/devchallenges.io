@@ -76,6 +76,7 @@ formInputs.forEach(input => {
 form.addEventListener("submit", (evt) => {
     evt.preventDefault();
     if (Array.from(formInputs).every(verifyInput)) {
+        alert(`Thank You!`);
     } else {
         formInputs.forEach(input => {
             if (!verifyInput(input)) {
