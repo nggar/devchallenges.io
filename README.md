@@ -2,7 +2,7 @@
 
 Dev Challenges provide challenges in **web development**
 
-See my [Dev Challenges portfolio](https://portfolio.devchallenges.io/nggar) and for more informations check [Dev Challenges website](https://devchallenges.io/)
+See my [Dev Challenges portfolio](https://devchallenges.io/portfolio/nggar) and for more informations check [Dev Challenges website](https://devchallenges.io/)
 
 You can find below my solutions :
 
