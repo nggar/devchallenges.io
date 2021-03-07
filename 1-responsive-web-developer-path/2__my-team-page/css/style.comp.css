@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   /* title */
   /* about */ }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       flex-direction: column; } }
   .header__title {
@@ -39,14 +39,14 @@ body {
     font-family: "PT Serif", serif;
     font-size: 3.6rem;
     font-weight: 700; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .header__title {
         width: 100%;
         margin-bottom: 3rem; } }
   .header__about {
     width: 50%;
     padding-right: 10%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .header__about {
         width: 100%; } }
   .header__about-title {
@@ -76,22 +76,22 @@ main {
     flex-basis: 100%;
     height: 0;
     margin-top: 5rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .crew__break {
         flex-basis: 0%;
         margin-top: 0; } }
   .crew__box {
     flex: 0 0 30%;
     display: flex; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .crew__box {
         flex: 0 0 47%; } }
     .crew__box--bottom {
       margin-top: 12rem; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 56.25em) {
         .crew__box--bottom {
           margin-top: 0; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .crew__box--bottom-responsive {
         margin-top: 5rem; } }
   .crew__img-box {

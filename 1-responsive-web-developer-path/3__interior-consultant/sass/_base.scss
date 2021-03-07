@@ -1,14 +1,21 @@
-@mixin responsive ($breakpoint) {
-      @if $breakpoint == phone {
-            @media only screen and (max-width: 37.5em) {@content};
-      }
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content;
+        }
+    }
 }
 *,
 ::after,
 ::before {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 // font-family: 'Crimson Pro', serif;
@@ -16,31 +23,31 @@
 // font-family: 'Montserrat', sans-serif;
 
 a {
-      text-decoration: none;
-      color: unset;
+    text-decoration: none;
+    color: unset;
 }
 
 html {
-      font-size: 62.5%;
+    font-size: 62.5%;
 
-      @include responsive(phone) {
-            font-size: 50%;
-      }
+    @include responsive(tab-port) {
+        font-size: 50%;
+    }
 }
 
 body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #181719;
-      color: #fff;
+    font-family: "Montserrat", sans-serif;
+    background-color: #181719;
+    color: #fff;
 }
 
 .container {
-      max-width: 144rem;
-      min-height: 100vh;
-      margin: 0 auto;
-      width: 90%;
+    max-width: 144rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 90%;
 
-      @include responsive(phone) {
-            width: 95%;
-      }
+    @include responsive(tab-port) {
+        width: 95%;
+    }
 }
