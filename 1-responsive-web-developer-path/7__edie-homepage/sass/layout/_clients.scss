@@ -1,0 +1,47 @@
+.client {
+    grid-column: center-start / center-end;
+    &__review {
+        width: 75%;
+
+        @include respond(md2) {
+            width: 85%;
+        }
+        @include respond(sm2) {
+            width: 100%;
+            font-size: 2.8rem;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-box {
+        width: 8.5rem;
+        height: 8.5rem;
+
+        margin-right: 2rem;
+        img {
+            border-radius: 1.2rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        &__name {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 3.6rem;
+            color: $color-gray-1;
+            margin-bottom: 0.5rem;
+        }
+        &__job {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.7rem;
+            color: $color-gray-3;
+        }
+    }
+}

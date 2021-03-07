@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    @include respond(xl) {
+        font-size: 70%;
+    }
+    @include respond(lg2) {
+        font-size: 56%;
+    }
+    @include respond(md2) {
+        font-size: 50%;
+    }
+    @include respond(sm2) {
+        font-size: 47%;
+    }
+}
+
+body {
+    font-family: "Poppins, sans-serif";
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(2, minmax(min-content, 70rem)) [center-end] minmax(5rem, 1fr) [full-end];
+    grid-template-rows: min-content;
+
+    @include respond(md2) {
+        grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(2, minmax(min-content, 70rem)) [center-end] minmax(3rem, 1fr) [full-end];
+    }
+
+    @include respond(sm2) {
+        grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(2, minmax(min-content, 70rem)) [center-end] minmax(2rem, 1fr) [full-end];
+    }
+}

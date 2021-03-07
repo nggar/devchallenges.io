@@ -1,0 +1,37 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm1 {
+        @media only screen and (max-width: 400px) {
+            @content;
+        }
+    }
+    @if $breakpoint == sm2 {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint == md1 {
+        @media only screen and (max-width: 760px) {
+            @content;
+        }
+    }
+    @if $breakpoint == md2 {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg1 {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg2 {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == xl {
+        @media only screen and (min-width: 1800px) {
+            @content;
+        }
+    }
+}

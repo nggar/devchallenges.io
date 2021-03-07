@@ -1,0 +1,92 @@
+.footer {
+    grid-column: full-start / full-end;
+    padding: 4rem 12rem;
+
+    background-color: #100e1d;
+    color: $white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include respond(lg1) {
+        padding: 4rem 10rem;
+    }
+    @include respond(md2) {
+        padding: 4rem 8rem;
+    }
+    @include respond(md2) {
+        padding: 4rem 3rem;
+
+        & > :not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__navigation {
+        a {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 3.6rem;
+        }
+
+        @include respond(sm2) {
+            grid-column: 1 / -1;
+
+            a {
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &__social {
+        h2 {
+            font-size: 3.6rem;
+            font-weight: 800;
+            font-family: "Heebo", sans-serif;
+            line-height: 5.2rem;
+            color: $color-gray-6;
+            margin-bottom: 1rem;
+        }
+
+        @include respond(sm2) {
+            grid-column: 1 / -1;
+        }
+
+        svg {
+            margin-right: 0.5rem;
+            cursor: pointer;
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+
+        @include respond(sm2) {
+            grid-column: 1 / -1;
+        }
+    }
+
+    &__cta {
+        @include respond(md1) {
+            grid-column: 1 / -1;
+            width: 90%;
+        }
+    }
+
+    &__copyright {
+        margin-top: 4rem;
+        grid-column: 1 / -1;
+        text-align: center;
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.7rem;
+            color: $color-gray-6;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

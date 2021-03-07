@@ -1,0 +1,59 @@
+/* margins */
+.u-mb-xs {
+    margin-bottom: 1rem;
+}
+.u-mb-sm {
+    margin-bottom: 2rem;
+}
+.u-mb-md {
+    margin-bottom: 4rem;
+}
+.u-mb-lg {
+    margin-bottom: 6rem;
+}
+.u-mb-xl {
+    margin-bottom: 8rem;
+}
+.u-mb-xxl {
+    margin-bottom: 10rem;
+}
+
+.u-mt-xs {
+    margin-top: 1rem;
+}
+.u-mt-sm {
+    margin-top: 2rem;
+}
+.u-mt-md {
+    margin-top: 4rem;
+}
+.u-mt-lg {
+    margin-top: 6rem;
+}
+.u-mt-xl {
+    margin-top: 8rem;
+}
+.u-mt-xxl {
+    margin-top: 10rem;
+}
+
+/* headings */
+.section-heading {
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: $color-gray-1;
+    line-height: 5.4rem;
+}
+.section-padding {
+    padding-right: 8rem;
+    padding-left: 8rem;
+
+    @include respond(lg2) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    @include respond(md1) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

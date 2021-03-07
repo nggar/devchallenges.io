@@ -1,0 +1,34 @@
+.btn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-gray-6;
+    line-height: 2.7rem;
+    background-color: $color-1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 1.6rem;
+    border-radius: 1.2rem;
+    transition: all 0.4s ease;
+
+    &:active {
+        background-color: darken($color-1, 10%);
+    }
+
+    &--disable {
+        background-color: #e0e0e0;
+        color: $color-gray-3;
+
+        &:active {
+            background-color: darken(#e0e0e0, 10%);
+        }
+    }
+}
+
+.btn-text {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    color: $color-1;
+    cursor: pointer;
+}
