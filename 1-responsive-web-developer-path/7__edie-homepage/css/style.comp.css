@@ -634,7 +634,7 @@ a {
     grid-column: 1 / -1;
     text-align: center; }
     .footer__copyright p {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       font-family: "Montserrat", sans-serif;
       line-height: 1.7rem;
