@@ -23,3 +23,5 @@ Basics responsive **HTML/CSS/JS** websites and pages
 -   Challenge 6 : [**"Checkout Page"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/6__check-out-page)
 
 -   Challenge 7 : [**"Edie Homepage"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/7__edie-homepage)
+
+-   Challenge 8 : [**"Portfolio"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/8__portfolio)
