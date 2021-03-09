@@ -1,0 +1,136 @@
+.skill {
+    grid-row: 1 / 2;
+    align-self: flex-start;
+    &--1 {
+        grid-column: 2 / 3;
+
+        @include respond(lg) {
+            grid-column: 3 / 5;
+        }
+        @include respond(xs) {
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;
+        }
+    }
+    &--2 {
+        grid-column: 3 / 4;
+        @include respond(lg) {
+            grid-column: 3 / 5;
+            grid-row: 2 / 3;
+            transform: translateY(-13rem);
+        }
+        @include respond(sm) {
+            transform: translateY(-9rem);
+        }
+        @include respond(xs) {
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+            transform: translateY(0);
+        }
+    }
+
+    &__item {
+        background-color: var(--white);
+    }
+
+    &__heading {
+        font-size: var(--fs-2);
+        font-weight: var(--fw-7);
+        color: var(--gray-2);
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+
+    &__list-box {
+        & > :not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(xs) {
+            display: block;
+        }
+
+        &__name {
+            color: var(--gray-2);
+
+            @include respond(xs) {
+                margin-bottom: 1.5rem;
+            }
+        }
+        &__level {
+            width: 20rem;
+            height: 1rem;
+            background-color: #c4c4c4;
+            border-radius: 1.2rem;
+            position: relative;
+            overflow: hidden;
+
+            @include respond(sm) {
+                width: 17rem;
+            }
+
+            @include respond(xs) {
+                width: 100%;
+            }
+
+            &.bar {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 1.2rem;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: var(--color-1);
+                }
+            }
+
+            &--1 {
+                &::after {
+                    width: 85%;
+                }
+            }
+            &--2 {
+                &::after {
+                    width: 90%;
+                }
+            }
+            &--3 {
+                &::after {
+                    width: 90%;
+                }
+            }
+            &--4 {
+                &::after {
+                    width: 60%;
+                }
+            }
+            &--5 {
+                &::after {
+                    width: 80%;
+                }
+            }
+            &--6 {
+                &::after {
+                    width: 65%;
+                }
+            }
+            &--7 {
+                &::after {
+                    width: 80%;
+                }
+            }
+            &--8 {
+                &::after {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

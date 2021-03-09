@@ -1,16 +1,23 @@
-$font-primary: 'Montserrat', sans-serif;
+$font-primary: "Montserrat", sans-serif;
 
-$color-grey-1: #4E5150;
+$color-grey-1: #4e5150;
 $color-grey-2: #a9a9a9;
 $color-grey-3: #bdbdbd;
-$color-grey-4: #E5E5E5;
+$color-grey-4: #e5e5e5;
 
 $white: #fff;
 $black: #000;
 
 /* mixin */
-@mixin responsive ($breakpoint) {
-      @if $breakpoint = phone {
-            @media only screen and (max-width: 600px) { @content }
-      }
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
 }

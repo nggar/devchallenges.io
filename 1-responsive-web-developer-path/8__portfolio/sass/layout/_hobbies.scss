@@ -1,0 +1,69 @@
+.hobbies {
+    grid-column: 1 / 2;
+
+    @include respond(lg) {
+        grid-column: 1 / -1;
+    }
+
+    h3 {
+        font-size: var(--fs-1);
+        color: var(--gray-2);
+        margin-bottom: 3rem;
+    }
+
+    &__content {
+        @include respond(lg) {
+            display: flex;
+
+            & > :not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+        @include respond(xs) {
+            display: block;
+        }
+    }
+}
+
+.hobby {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    /*     &__img-box {
+        height: 15rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    } */
+    &__img {
+        height: 16rem;
+        border-radius: 1.2rem;
+        margin-bottom: 1.5rem;
+
+        &--1 {
+            background: url(../../images/video-game.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &--2 {
+            background: url(../../images/football.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+        &--3 {
+            background: url(../../images/programming.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+    }
+
+    h2 {
+        font-size: var(--fs-2);
+        color: var(--gray-1);
+        font-weight: var(--fw-6);
+        margin-bottom: 1rem;
+    }
+}

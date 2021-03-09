@@ -1,0 +1,26 @@
+.btn {
+    padding: 1rem 3rem;
+    font-size: var(--fs-2);
+    background-color: var(--color-1);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-1);
+
+    &:hover {
+        background-color: darken(#2f80ed, 5%);
+        box-shadow: 0 0.5rem 1.5rem rgba(#333, 0.15);
+    }
+
+    &--outlined {
+        background-color: var(--white);
+        color: var(--color-1);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: darken(#2f80ed, 5%);
+            color: var(--white);
+        }
+    }
+}

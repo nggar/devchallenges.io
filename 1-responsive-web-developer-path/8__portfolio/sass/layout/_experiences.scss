@@ -1,0 +1,53 @@
+.experiences {
+    align-self: flex-start;
+    grid-column: 1 / 2;
+
+    @include respond(lg) {
+        grid-column: 1 / -1;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        color: var(--gray-2);
+        margin-bottom: 4rem;
+    }
+}
+
+.experience {
+    display: flex;
+
+    @include respond(xxs) {
+        display: block;
+        text-align: center;
+    }
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+        @include respond(xxs) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    img {
+        width: 55px;
+        margin-right: 3rem;
+        margin-top: 1.5rem;
+        @include respond(xxs) {
+            margin-right: 0;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__detail {
+        & > :nth-child(1) {
+            font-size: var(--fs-4);
+            margin-bottom: 1rem;
+        }
+        & > :nth-child(2) {
+            color: var(--gray-1);
+            font-weight: var(--fw-6);
+            margin-bottom: 2rem;
+        }
+    }
+}

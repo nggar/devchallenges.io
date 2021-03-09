@@ -1,0 +1,82 @@
+.projects {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 2;
+
+    @include respond(lg) {
+        grid-column: 1 / -1;
+        grid-row: 3 / span 2;
+    }
+    @include respond(xs) {
+        grid-row: 5 / span 2;
+    }
+
+    & > :not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        font-size: var(--fs-2);
+        color: var(--gray-2);
+    }
+}
+
+.project {
+    display: flex;
+    @include respond(xs) {
+        display: block;
+    }
+
+    &__img-box {
+        height: 25rem;
+        margin-right: 2rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        border: 1px solid rgba(#333, 0.1);
+
+        @include respond(xs) {
+            margin-bottom: 3rem;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__tag {
+        span {
+            color: var(--gray-2);
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+        @include respond(xs) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__title {
+        color: var(--gray-1);
+        font-size: var(--fs-1);
+
+        @include respond(xs) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__detail {
+        @include respond(xs) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+        margin-right: 1rem;
+    }
+}

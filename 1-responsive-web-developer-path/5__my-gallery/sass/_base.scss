@@ -1,41 +1,48 @@
-*, ::before, ::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: inherit;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 html {
-      font-size: 62.5%;
+    font-size: 62.5%;
 
-      @include responsive (phone) {
-            font-size: 45%;
-      }
+    @include responsive(tab-port) {
+        font-size: 56.25%;
+    }
+    @include responsive(phone) {
+        font-size: 45%;
+    }
 }
 body {
-      box-sizing: border-box;
-      font-family: $font-primary;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: $color-grey-1;
+    box-sizing: border-box;
+    font-family: $font-primary;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-grey-1;
 
-      ::selection {
-            color: $white;
-            background-color: $color-grey-1;
-      }
+    ::selection {
+        color: $white;
+        background-color: $color-grey-1;
+    }
 }
 
 /* utilities */
 .mw {
-      max-width: 91.5rem;
-
-      @include responsive (phone) {
-            max-width: 95%;
-      }
+    max-width: 91.5rem;
+    @include responsive(tab-port) {
+        max-width: 90%;
+    }
+    @include responsive(phone) {
+        max-width: 95%;
+    }
 }
 .center {
-      margin-left: auto;
-      margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .w-100 {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
 }
