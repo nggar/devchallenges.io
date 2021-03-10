@@ -6,7 +6,7 @@ See my [Dev Challenges portfolio](https://devchallenges.io/portfolio/nggar) and 
 
 You can find below my solutions :
 
-## Responsive Web Developer Path :
+## Responsive Web Developer Path (completed) :
 
 Responsive **HTML/CSS** websites and basic Javascript
 
