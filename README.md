@@ -8,7 +8,7 @@ You can find below my solutions :
 
 ## Responsive Web Developer Path :
 
-Basics responsive **HTML/CSS/JS** websites and pages
+Responsive **HTML/CSS** websites and basic Javascript
 
 -   Challenge 1 : [**"404 Not Found"**](https://github.com/nggar/devchallenges.io/tree/main/1-responsive-web-developer-path/1__404-not-found)
 
