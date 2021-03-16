@@ -83,7 +83,8 @@ body {
 
         @include respond(mobile) {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
+            margin-top: 3rem;
         }
     }
 
@@ -94,7 +95,7 @@ body {
             width: 40rem;
         }
         @include respond(mobile) {
-            width: 30rem;
+            width: 35rem;
         }
     }
 
