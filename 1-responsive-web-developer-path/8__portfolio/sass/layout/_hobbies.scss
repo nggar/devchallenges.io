@@ -21,6 +21,10 @@
         }
         @include respond(xs) {
             display: block;
+
+            & > :not(:last-child) {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -29,12 +33,7 @@
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
-    /*     &__img-box {
-        height: 15rem;
-        border-radius: 1.2rem;
-        overflow: hidden;
-        margin-bottom: 1.5rem;
-    } */
+
     &__img {
         height: 16rem;
         border-radius: 1.2rem;

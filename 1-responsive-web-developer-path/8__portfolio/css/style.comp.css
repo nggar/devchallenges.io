@@ -60,6 +60,8 @@ body {
 
 .container {
   background-color: inherit;
+  max-width: 144rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
@@ -151,29 +153,31 @@ body {
       .profile__img-box {
         flex: none;
         margin: 0 auto;
-        margin-bottom: 2.5rem;
-        height: 22rem;
-        width: 22rem;
-        border-radius: 50%; }
+        height: 25rem;
+        width: 25rem;
+        border-radius: 50%;
+        margin-top: 2rem;
+        margin-bottom: 4rem; }
         .profile__img-box img {
-          height: 100%;
-          border-radius: none; } }
+          height: 100%; } }
     @media only screen and (max-width: 400px) {
       .profile__img-box {
-        height: 20rem;
-        width: 20rem; } }
+        height: 23rem;
+        width: 23rem; } }
   .profile__text-box {
     display: flex;
-    flex-direction: column;
-    border-left: 0.7px solid var(--gray-3);
-    padding-left: 2rem; }
+    flex-direction: column; }
+    @media only screen and (max-width: 768px) {
+      .profile__text-box {
+        border-left: 0.7px solid var(--gray-3);
+        padding-left: 2rem; } }
     @media only screen and (max-width: 530px) {
       .profile__text-box {
         display: block;
         border: none;
         padding-left: 0;
         border-top: 1px solid #dfdede;
-        padding-top: 2rem; } }
+        padding-top: 4rem; } }
   .profile__info {
     margin-bottom: 2.5rem; }
     .profile__info h2 {
@@ -401,41 +405,38 @@ body {
         margin-right: 2rem; } }
   @media only screen and (max-width: 600px) {
     .hobbies__content {
-      display: block; } }
+      display: block; }
+      .hobbies__content > :not(:last-child) {
+        margin-right: 0; } }
 
-.hobby {
-  /*     &__img-box {
-        height: 15rem;
-        border-radius: 1.2rem;
-        overflow: hidden;
-        margin-bottom: 1.5rem;
-    } */ }
-  .hobby:not(:last-child) {
-    margin-bottom: 3rem; }
-  .hobby__img {
-    height: 16rem;
-    border-radius: 1.2rem;
-    margin-bottom: 1.5rem; }
-    .hobby__img--1 {
-      background: url(../../images/video-game.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
-    .hobby__img--2 {
-      background: url(../../images/football.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: bottom; }
-    .hobby__img--3 {
-      background: url(../../images/programming.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top; }
-  .hobby h2 {
-    font-size: var(--fs-2);
-    color: var(--gray-1);
-    font-weight: var(--fw-6);
-    margin-bottom: 1rem; }
+.hobby:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.hobby__img {
+  height: 16rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1.5rem; }
+  .hobby__img--1 {
+    background: url(../../images/video-game.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .hobby__img--2 {
+    background: url(../../images/football.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; }
+  .hobby__img--3 {
+    background: url(../../images/programming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; }
+
+.hobby h2 {
+  font-size: var(--fs-2);
+  color: var(--gray-1);
+  font-weight: var(--fw-6);
+  margin-bottom: 1rem; }
 
 .blogs {
   grid-column: 2 / 4;

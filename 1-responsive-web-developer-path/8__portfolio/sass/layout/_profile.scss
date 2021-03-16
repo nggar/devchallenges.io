@@ -47,34 +47,36 @@
         @include respond(xs2) {
             flex: none;
             margin: 0 auto;
-            margin-bottom: 2.5rem;
-            height: 22rem;
-            width: 22rem;
+            height: 25rem;
+            width: 25rem;
             border-radius: 50%;
             img {
                 height: 100%;
-                border-radius: none;
             }
+            margin-top: 2rem;
+            margin-bottom: 4rem;
         }
         @include respond(xxs) {
-            height: 20rem;
-            width: 20rem;
+            height: 23rem;
+            width: 23rem;
         }
     }
 
     &__text-box {
         display: flex;
         flex-direction: column;
-        border-left: 0.7px solid var(--gray-3);
-        padding-left: 2rem;
 
+        @include respond(sm) {
+            border-left: 0.7px solid var(--gray-3);
+            padding-left: 2rem;
+        }
         @include respond(xs2) {
             display: block;
             border: none;
             padding-left: 0;
 
             border-top: 1px solid #dfdede;
-            padding-top: 2rem;
+            padding-top: 4rem;
         }
     }
 
